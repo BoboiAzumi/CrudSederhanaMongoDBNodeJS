@@ -15,7 +15,7 @@ async function findFromCollection(callback){
 
                         callback(null, data)
 
-                        client.close()
+                        await client.close()
                     }
                     catch(emsg){
                         callback(emsg, null)
@@ -25,7 +25,7 @@ async function findFromCollection(callback){
                     try{
                         callback(null, [])
 
-                        client.close()
+                        await client.close()
                     }
                     catch(emsg){
                         callback(emsg, null)
@@ -54,7 +54,7 @@ async function findFromCollectionBy(obj, callback){
 
                         callback(null, data)
 
-                        client.close()
+                        await client.close()
                     }
                     catch(emsg){
                         callback(emsg, null)
@@ -64,7 +64,7 @@ async function findFromCollectionBy(obj, callback){
                     try{
                         callback(null, [])
 
-                        client.close()
+                        await client.close()
                     }
                     catch(emsg){
                         callback(emsg, null)

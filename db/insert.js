@@ -15,7 +15,7 @@ function InsertIntoCollection(obj, callback){
 
                         callback(null, true)
 
-                        client.close()
+                        await client.close()
                     }
                     catch(emsg){
                         callback(emsg, null)
@@ -31,7 +31,7 @@ function InsertIntoCollection(obj, callback){
 
                         callback(null, true)
 
-                        client.close()
+                        await client.close()
                     }
                     catch(emsg){
                         callback(emsg, null)

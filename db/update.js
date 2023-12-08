@@ -15,7 +15,7 @@ function updateCollection(objCondition, obj, callback){
 
                         callback(null, true)
 
-                        client.close()
+                        await client.close()
                     }
                     catch(emsg){
                         callback(emsg, null)
@@ -25,7 +25,7 @@ function updateCollection(objCondition, obj, callback){
                     try{
                         callback(null, false)
 
-                        client.close()
+                        await client.close()
                     }
                     catch(emsg){
                         callback(emsg, null)
