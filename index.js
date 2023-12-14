@@ -133,4 +133,4 @@ app.get("/search", async (req, res) => {
     }
 })
 
-app.listen(1500, () => console.log("Server berjalan di http://localhost:1500"))
+app.listen(1500, () => console.log("Server berjalan di http://localhost:1000"))
